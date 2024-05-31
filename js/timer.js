@@ -34,6 +34,21 @@ const updateTimer = () => {
   minutesBlock.textContent = fMinutes;
   secondsBlock.textContent = fSeconds;
 
+  daysBlock.nextElementSibling.textContent = numWord(days, [
+    "день",
+    "дня",
+    "дней",
+  ]);
+  hoursBlock.nextElementSibling.textContent = numWord(hours, [
+    "час",
+    "часа",
+    "часов",
+  ]);
+  minutesBlock.nextElementSibling.textContent = numWord(minutes, [
+    "минута",
+    "минуты",
+    "минут",
+  ]);
   secondsBlock.nextElementSibling.textContent = numWord(seconds, [
     "секунда",
     "секунды",
