@@ -1,5 +1,6 @@
 const modal = () => {
   const modalBtn = document.querySelector(".modal__button");
+  const courseBtn = document.querySelector('.course__button');
   const modal = document.querySelector(".modal");
   const modalInner = document.querySelector(".modal__inner");
 
@@ -29,6 +30,10 @@ const modal = () => {
   };
 
   modalBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+  
+  courseBtn.addEventListener("click", () => {
     modal.style.display = "flex";
   });
 
